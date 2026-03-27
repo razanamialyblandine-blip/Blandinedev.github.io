@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - Blandine</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeDown 1s ease;
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* NAV */
+nav {
+    background: #34495e;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4ca1af;
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    animation: fadeUp 1s ease;
+}
+
+/* TITLES */
+h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* COMPETENCES */
+ul li {
+    margin: 8px 0;
+}
+
+/* PROJECT CARD */
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+#contact p {
+    margin: 6px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="photo.jpg" alt="Photo de Blandine">
+    <h1>RAZANAMIALY Blandine</h1>
+    <p>Développeuse Web Junior</p>
+</header>
+
+<nav>
+    <a href="#profil">Profil</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="profil">
+    <h2>Profil</h2>
+    <p>
+        Jeune développeuse web en Licence , passionnée et autodicate.
+        Je recherche un stage ou une opportunité pour mettre en pratique mes compétences et évoluer dans le domaine informatique.
+    </p>
+</section>
+
+<section id="competences">
+    <h2>Compétences</h2>
+    <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript (notions)</li>
+        <li>PHP / MySQL</li>
+        <li>Laravel</li>
+        <li>WordPress</li>
+        <li>Git / GitHub</li>
+    </ul>
+</section>
+
+<section id="projets">
+    <h2>Projets</h2>
+
+    <div class="project">
+        <h3>Portfolio Personnel</h3>
+        <p>Site web pour présenter mon profil et mes compétences.</p>
+    </div>
+
+    <div class="project">
+        <h3>Application web</h3> 
+        <p>Application web pour la gestion des machines </p>
+        <p>Application web pour l'enregistrement des actes civils</p>
+    </div>
+
+    <div class="project">
+        <h3>Site WordPress</h3>
+        <p>Installation, configuration et personnalisation d’un site WordPress.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email : razanamialyblandine@gmail.com</p>
+    <p>Téléphone : +261 81 771 96</p>
+    <p>GitHub : github.com/blandine</p>
+</section>
+
+<footer>
+    <p>© 2026 Blandine - Portfolio</p>
+</footer>
+
+</body>
+</html>
